@@ -72,7 +72,7 @@ function getAllUrlParams(url) {
 }
 
 function UrlDirect() {
-	window.location.assign(`https://moocraft.tk/projects/s/Find%20Pi/save?pi=${pi}&count=${count}&operator=${op}`);
+  window.location.assign(`${window.location.href}save?pi=${pi}&count=${count}&operator=${op}`);
 }
 
 function setup() { 

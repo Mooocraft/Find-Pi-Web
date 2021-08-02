@@ -90,6 +90,6 @@ function saveURL() {
 	var pi = getAllUrlParams().pi;
 	var count = getAllUrlParams().count;
 	var op = getAllUrlParams().operator;
-	document.getElementById("URL").innerHTML = `https://moocraft.tk/projects/s/Find%20Pi?pi=${pi}&count=${count}&operator=${op}`;
+  document.getElementById("URL").innerHTML = `${window.location.href}?pi=${pi}&count=${count}&operator=${op}`;
 	document.getElementById("val").innerHTML = pi;
 }
