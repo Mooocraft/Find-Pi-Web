@@ -90,6 +90,6 @@ function saveURL() {
 	var pi = getAllUrlParams().pi;
 	var count = getAllUrlParams().count;
 	var op = getAllUrlParams().operator;
-  document.getElementById("URL").innerHTML = `${window.location.href}`;
+  document.getElementById("URL").innerHTML = window.location.href;
 	document.getElementById("val").innerHTML = pi;
 }
