@@ -8,7 +8,7 @@
 	<meta charset=utf-8>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-	<script language="javascript" type="text/javascript" src="save.js"></script>
+	<script defer language="javascript" type="text/javascript" src="save.js"></script>
 </head>
 <body>
 	<div style="text-align: center;">
@@ -24,7 +24,7 @@
 		<br>
 		<br>
 		<textarea id="URL">‍</textarea>
-		<button id="button1" style="color:green" onclick="var pi = getAllUrlParams().pi;var count = getAllUrlParams().count;var op = getAllUrlParams().operator;copyTextToClipboard(`${window.location.herf}?pi=${pi}&count=${count}&operator=${op}`);">Click to copy</button>
+		<button id="button1" style="color:green" onclick="copyTextToClipboard()">Click to copy</button>
 		</h1>
 		<button style="color:green" onClick="window.location.origin + window.location.pathname.replace('/save', '/') + window.location.search">BACK</button>
 	</div>

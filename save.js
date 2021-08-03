@@ -59,7 +59,7 @@ function getAllUrlParams(url) {
   return obj;
 }
 
-function copyTextToClipboard(text) {
+function copyTextToClipboard() {
   var textArea = document.getElementById("URL");
   textArea.select();
   try {
@@ -71,10 +71,9 @@ function copyTextToClipboard(text) {
   }
 }
 
-function saveURL() {
-	var pi = getAllUrlParams().pi;
-	var count = getAllUrlParams().count;
-	var op = getAllUrlParams().operator;
-  document.getElementById("URL").innerHTML = window.location.href;
-	document.getElementById("val").innerHTML = pi;
-}
+
+var pi = getAllUrlParams().pi;
+var count = getAllUrlParams().count;
+var op = getAllUrlParams().operator;
+document.getElementById("URL").innerHTML = window.location.origin + window.location.pathname.replace('/save', '/') + window.location.search;
+document.getElementById("val").innerHTML = pi;
