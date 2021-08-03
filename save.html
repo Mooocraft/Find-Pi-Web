@@ -26,16 +26,7 @@
 		<textarea id="URL">‍</textarea>
 		<button id="button1" style="color:green" onclick="var pi = getAllUrlParams().pi;var count = getAllUrlParams().count;var op = getAllUrlParams().operator;copyTextToClipboard(`${window.location.herf}?pi=${pi}&count=${count}&operator=${op}`);">Click to copy</button>
 		</h1>
-		<script>
-			saveURL();
-			function back() {
-			var pi = getAllUrlParams().pi;
-			var count = getAllUrlParams().count;
-			var op = getAllUrlParams().operator;
-			window.location.assign(`${window.location.href}?pi=${pi}&count=${count}&operator=${op}`);
-		}
-		</script>
-		<button style="color:green" onClick="back();">BACK</button>
+		<button style="color:green" onClick="window.location.origin + window.location.pathname.replace("/save", "/") + window.location.search">BACK</button>
 	</div>
 </body>
 </html>
